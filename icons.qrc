@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="about">icons/about.png</file>
+        <file alias="connect">icons/connect.png</file>
+        <file alias="psql">icons/psql.png</file>
+        <file alias="reload">icons/reload.png</file>
+        <file alias="remove">icons/remove.png</file>
+        <file alias="save">icons/save.png</file>
+        <file alias="update">icons/update.png</file>
+        <file alias="autoUpdate">icons/updateTime.png</file>
+        <file alias="icon">icons/icon.png</file>
+        <file alias="import">icons/import.png</file>
+        <file alias="export">icons/export.png</file>
+    </qresource>
+</RCC>

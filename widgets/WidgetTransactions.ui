@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WidgetTransactions</class>
+ <widget class="QWidget" name="WidgetTransactions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>451</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="table">
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionKill">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+   </property>
+   <property name="text">
+    <string>Kill</string>
+   </property>
+   <property name="toolTip">
+    <string>Kill</string>
+   </property>
+  </action>
+  <action name="actionKillWhere">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+   </property>
+   <property name="text">
+    <string>Kill %param%</string>
+   </property>
+   <property name="toolTip">
+    <string>Kill</string>
+   </property>
+  </action>
+  <action name="actionKillAll">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+   </property>
+   <property name="text">
+    <string>KillAll</string>
+   </property>
+   <property name="toolTip">
+    <string>KillAll</string>
+   </property>
+  </action>
+  <action name="actionFree">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/icons/autoUpdate</normaloff>:/icons/autoUpdate</iconset>
+   </property>
+   <property name="text">
+    <string>Free</string>
+   </property>
+   <property name="toolTip">
+    <string>Free</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
