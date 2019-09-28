@@ -9,14 +9,14 @@
 
 void _logWrite(int level, QString message, QString tag = QString())
 {
-    openlog(QApplication::applicationName().toAscii().constData(), 0, LOG_USER);
+    openlog(QApplication::applicationName().toLocal8Bit().constData(), 0, LOG_USER);
     if (tag.isEmpty()) {
-        syslog(level, "%s", message.toAscii().constData());
+        syslog(level, "%s", message.toLocal8Bit().constData());
 #ifdef DEVELOPER
         qDebug() << message;
 #endif
     } else {
-        syslog(level, "%s", QString("[%1] %2").arg(tag).arg(message).toAscii().constData());
+        syslog(level, "%s", QString("[%1] %2").arg(tag).arg(message).toLocal8Bit().constData());
 #ifdef DEVELOPER
         qDebug() << QString("[%1] %2").arg(tag).arg(message);
 #endif

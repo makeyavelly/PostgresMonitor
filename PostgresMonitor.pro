@@ -13,7 +13,7 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
+    mainwindow.cpp \
     sql.cpp \
     log.cpp \
     widgets/WidgetTransactions.cpp \

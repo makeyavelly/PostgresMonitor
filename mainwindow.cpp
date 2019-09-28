@@ -72,9 +72,11 @@ void MainWindow::timerEvent(QTimerEvent *)
 void MainWindow::loadCodec()
 {
     QTextCodec *codec = QTextCodec::codecForName("UTF-8");
-    QTextCodec::setCodecForCStrings(codec);
     QTextCodec::setCodecForLocale(codec);
+#if QT_VERSION_MAJOR < 5
+    QTextCodec::setCodecForCStrings(codec);
     QTextCodec::setCodecForTr(codec);
+#endif
 }
 
 
